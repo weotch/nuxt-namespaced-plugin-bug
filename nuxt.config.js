@@ -1,4 +1,11 @@
 module.exports = {
+
+  // Try files from a namespaced package
+  plugins: [
+    '@fortawesome/vue-fontawesome/src/utils', // Doesn't work
+    './node_modules/@fortawesome/vue-fontawesome/src/utils', // Works
+  ],
+
   /*
   ** Headers of the page
   */
@@ -36,4 +43,3 @@ module.exports = {
     }
   }
 }
-
